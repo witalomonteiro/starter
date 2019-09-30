@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Modulo 02 - Exercicio 03</title>
+        <!--
+            A partir do seguinte vetor: var nomes = ["Diego", "Gabriel", "Lucas"];
+            Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+            ● Diego
+            ● Gabriel
+            ● Lucas
+        -->
+    </head>
+    <body>
+        <input type="text" name="nome">
+        <button>Adicionar</button>
+        <ul></ul>
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        var listElement = document.querySelector('ul');
+        var inputElement = document.querySelector('input');
+        var btnElement = document.querySelector('button');
+
+        for (const nome of nomes) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nome , 'Excluir');
+
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+        }
+        
+        btnElement.onclick = function() {
+            var nome = inputElement.value;
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nome);
+
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+            inputElement.value="";
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicio 04</title>
+    </head>
+    <body> 
+        <script>
+           
+            function experiencia(anos) {
+                switch (anos) {
+                    case 0:
+                    case 1:
+                        return 'Iniciante';
+                        break;
+                    case 2:
+                    case 3:
+                        return 'Intermediário';
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        return 'Avançado';
+                        break;
+                    default:
+                        return 'Jedi Master';
+                        break;
+                }
+            }
+            console.log(experiencia(10));
+        </script>
+    </body>
+</html>

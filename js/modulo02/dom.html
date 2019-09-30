@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manipulando a DOM</title>
+    </head>
+    <body>
+        <!--DOM-->
+        <div id="app">
+            <!--
+            <input type="text" name="nome" />
+            <button class="botao">Adicionar</button>
+            -->
+            <!--
+            <input id="nome" />
+            -->
+            <!--
+            <div class="box" ></div>
+            -->
+            <!-- Estrutura do App - App de Todos -->
+            <ul>
+                <li>
+                    Fazer Café
+                    <a href="#">Excluir</a>
+                </li>
+                <li>
+                    Estudar Javascript
+                    <a href="#">Excluir</a>
+                </li>
+                <li>
+                    Acessar a comunidade da Rocketseat
+                    <a href="#">Excluir</a>
+                </li>
+            </ul>
+            <input type="text" placeholder="Digite um todo">
+            <button>Adicionar</button>
+        </div>
+        <script>
+            /*
+            // Eventos Inline
+            function mostraAlerta() {
+                alert('Botão Pressionado!');
+            }
+            // Tabalhando a DOM
+            // document -> Variavel global que referencia a arvore de elementos(DOM)
+            //var inputElement = document.getElementById('nome'); // Buscar elementos pelo id
+            //var inputElement = document.getElementsByTagName('input')[0]; // Buscar elementos pela tag
+            //var inputElement = document.getElementsByClassName('nome')[0]; // Buscar elementos pela class
+            //var inputElement = document.querySelector('div#app input');
+            //var inputElement = document.querySelector('input[name=nome]'); 
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+            btnElement.onclick = function() {
+                var text = inputElement.value;
+                alert(text);
+            }
+ 
+            // Lidando com Elementos
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'https://rocketseat.com.br/');
+            linkElement.setAttribute('title', 'Site da Rocketseat');
+
+            var textElement = document.createTextNode('Acessar site da Rocketseat');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement); // O método appendChild () acrescenta um nó como o último filho de um nó.
+
+            var inputElement = document.querySelector('#nome');
+            containerElement.removeChild(inputElement);
+            
+           // Alterando Estilos
+            var boxElement = document.querySelector('.box');
+
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#F00';
+            */
+            // Estrutura do App
+            // Utilizado arquivo externo
+        </script>
+    </body>
+</html>
